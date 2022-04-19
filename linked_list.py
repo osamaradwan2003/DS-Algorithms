@@ -169,20 +169,22 @@ class LinkedList():
         return string
 
 
-lists = LinkedList()
+# test linked list
 
-lists.add(1)
-lists.add(2)
-lists.add(3)
-lists.add(4)
-lists.add(5)
-lists.add(6)
-lists.add(["ssss"])
-lists.add(8)
-lists.add(9)
-lists.add(10)
+# lists = LinkedList()
 
-print(lists)
+# lists.add(1)
+# lists.add(2)
+# lists.add(3)
+# lists.add(4)
+# lists.add(5)
+# lists.add(6)
+# lists.add(["ssss"])
+# lists.add(8)
+# lists.add(9)
+# lists.add(10)
 
-for i in lists:
-    print(i)
+# print(lists)
+
+# for i in lists:
+#     print(i)

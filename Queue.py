@@ -1,28 +1,29 @@
 from linked_list import LinkedList
 
 
-class Stack(LinkedList):
+class Queue(LinkedList):
     def __init__(self, *items):
         super().__init__()
         if(len(items) > 0):
             for i in items:
                 self.append(i)
 
-    def push(self, data):
-        self.add(data=data)
+    def append(self, o: object):
+        self.add(o)
+        return self
 
-    def pop(self):
+    def shift(self):
         if(self.isEmpty()):
-            raise RuntimeError("Empty Stack")
-        return self.removeLast()
+            raise RuntimeError("Empty Queue")
+        return self.removeFirst()
 
     def peek(self):
         if(self.isEmpty()):
-            raise RuntimeError("Empty Stack")
-        return self.getLast()
+            raise RuntimeError("Empty Queue")
+        return self.getFirst()
 
     def __iter__(self):
         return super().__iter__()
 
     def __next__(self):
-        return super().__next__()
+        super().__next__()
